@@ -1,0 +1,57 @@
+{
+	"parser": "babel-eslint",
+	"extends": "airbnb",
+	"rules": {
+		"no-tabs": 0,
+		"comma-dangle": 0,
+		"indent": [
+			"error",
+			2
+		],
+		"no-restricted-globals": "off",
+		"no-param-reassign": "off",
+		"prefer-destructuring": "off",
+		"no-unused-vars": "warn",
+		"no-underscore-dangle": 0,
+		"object-curly-newline": 0,
+		"consistent-return": "off",
+		"max-len": [
+			1,
+			125,
+			2,
+			{
+				"ignoreComments": true,
+				"ignoreStrings": true,
+				"ignoreUrls": true
+			}
+		],
+		"no-console": [
+			"error",
+			{
+				"allow": [
+					"log",
+					"warn",
+					"error",
+					"time",
+					"timeEnd"
+				]
+			}
+		],
+		"linebreak-style": 0,
+		"no-shadow": [
+			"warn",
+			{
+				"allow": [
+					"err",
+					"params"
+				]
+			}
+		],
+		"no-use-before-define": [
+			2,
+			{
+				"functions": false
+			}
+		]
+	}
+}
