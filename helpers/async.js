@@ -10,3 +10,10 @@ exports.TE = function TE(errorObj, log) { // TE stands for Throw Error
   }
   throw new Error(errorObj.error_text);
 };
+
+exports.delayAndGetRandom = ms => new Promise(resolve => setTimeout(
+  () => {
+    const val = Math.trunc(Math.random() * 100);
+    resolve(val);
+  }, ms
+));
