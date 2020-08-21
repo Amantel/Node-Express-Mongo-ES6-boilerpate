@@ -1,9 +1,10 @@
 let environment = process.env.NODE_ENV || '';
 environment = environment.trim();
 
+const databaseConnectionURL = process.env.databaseConnectionURL || null;
+const appDB = process.env.appDB || null;
 
-const databaseConnectionURL = null;
-const appDB = null;
+
 console.log(environment || 'Default environment - production');
 
 if (!databaseConnectionURL || !appDB) {
