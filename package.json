@@ -11,22 +11,26 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "async": "^3.1.1",
-    "axios": "^0.19.2",
+    "async": "^3.2.0",
+    "axios": "^0.21.1",
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
-    "crypto-js": "^3.3.0",
+    "crypto-js": "^4.0.0",
     "express": "^4.17.1",
     "express-bearer-token": "^2.4.0",
-    "fs-extra": "^8.1.0",
-    "lodash": "^4.17.15",
-    "moment": "^2.24.0",
-    "mongodb": "^3.5.3",
+    "fs-extra": "^9.1.0",
+    "lodash": "^4.17.20",
+    "moment": "^2.29.1",
+    "mongodb": "^3.6.4",
     "request": "^2.88.2"
   },
   "devDependencies": {
     "chai": "^4.2.0",
     "chai-http": "^4.3.0",
-    "mocha": "^6.2.2"
+    "eslint": "^7.19.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "mocha": "^8.2.1"
   }
 }

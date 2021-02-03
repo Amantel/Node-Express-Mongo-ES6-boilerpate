@@ -1,10 +1,7 @@
-
-
 const cors = require('cors');
 const bodyParser = require('body-parser');
 const express = require('express');
 const bearerToken = require('express-bearer-token');
-
 
 const serverSettings = require('./server_settings');
 
@@ -14,7 +11,6 @@ const port = process.env.PORT || serverSettings.portAPI || 5001;
 
 const app = express();
 app.use(cors());
-
 
 app.use(bearerToken());
 
@@ -28,7 +24,6 @@ app.use(
 );
 
 app.use(require('./controllers'));
-
 
 app.use((req, res) => res
   .status(404)
@@ -52,7 +47,6 @@ app.use((err, req, res) => {
     .json({ error: 'Something when wrong' })
     .end();
 });
-
 
 db.connect((err) => {
   if (err) {

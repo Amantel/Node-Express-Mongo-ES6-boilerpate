@@ -9,14 +9,13 @@
 const chai = require('chai');
 const chaiHttp = require('chai-http');
 
-const moment = require('moment');
+// const moment = require('moment');
 
 const app = require('../index');
 
-const db = require('../db');
+// const db = require('../db');
 
 process.env.NODE_ENV = process.env.NODE_ENV_TEST || 'development';
-
 
 const { expect } = chai;
 chai.use(chaiHttp);
@@ -32,7 +31,6 @@ before(function (done) {
   });
 });
 
-
 describe('Server health', () => {
   it('Get 404 from / as intended', (done) => {
     requester
@@ -44,7 +42,6 @@ describe('Server health', () => {
       });
   });
 });
-
 
 describe('General app API', () => {
   it('Get status = ok from test endpoint', (done) => {

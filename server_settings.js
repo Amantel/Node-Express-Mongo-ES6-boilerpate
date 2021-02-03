@@ -4,7 +4,6 @@ environment = environment.trim();
 const databaseConnectionURL = process.env.databaseConnectionURL || null;
 const appDB = process.env.appDB || null;
 
-
 console.log(environment || 'Default environment - production');
 
 if (!databaseConnectionURL || !appDB) {

@@ -15,7 +15,6 @@ function getTestFindOne(action) {
     .findOne({ action });
 }
 
-
 module.exports = {
   getTestFind,
   getTestFindOne

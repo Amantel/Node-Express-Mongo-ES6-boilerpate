@@ -1,4 +1,3 @@
-
 const mongodb = require('mongodb');
 
 const MongoClient = mongodb.MongoClient;
@@ -7,11 +6,9 @@ const ObjectID = mongodb.ObjectID;
 const async = require('async');
 const serverSettings = require('./server_settings');
 
-
 const state = {
   db: null,
 };
-
 
 const options = {
   keepAlive: 1,
@@ -48,7 +45,6 @@ exports._id = function _id(id) {
   }
   return null;
 };
-
 
 exports.getDB = function getDB(dbName) {
   return state[dbName];

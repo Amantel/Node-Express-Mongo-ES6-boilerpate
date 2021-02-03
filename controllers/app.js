@@ -4,14 +4,13 @@ const express = require('express');
 // packages
 
 // settings
-const appSettings = require('../settings');
-
+// const appSettings = require('../settings');
 
 // models
 const General = require('../models/general');
 
 // libs
-const techLib = require('../helpers/techical');
+// const techLib = require('../helpers/technical');
 const asyncLib = require('../helpers/async');
 
 // specific
@@ -48,7 +47,6 @@ router.get('/testFindDB/', async (req, res) => {
     .end();
 });
 
-
 /*
   For this you need to connect have a collection names test
   With at least one object like {action:'dbTest'}
@@ -71,6 +69,5 @@ router.get('/testFindOneDB/', async (req, res) => {
     })
     .end();
 });
-
 
 module.exports = router;
